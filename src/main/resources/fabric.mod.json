@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "goldendelicacies",
+	"version": "1.0",
+	"name": "Golden Delicacies",
+	"description": "Adds various food additions into Minecraft, namely golden food with unique effects from each one you eat",
+	"authors": [
+		"MonsterTrex"
+	],
+	"contact": {
+		"homepage": "https://github.com/MonsterTrex",
+		"sources": "https://github.com/MonsterTrex/Golden_Delicacies_1.20.X"
+	},
+	"license": "MIT",
+	"icon": "assets/goldendelicacies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.monstertrex.goldendelicacies.GoldenDelicaciesMod"
+		],
+		"fabric-datagen": [
+			"net.monstertrex.goldendelicacies.GoldenDelicaciesModDataGenerator"
+		],
+		"client": [
+			"net.monstertrex.goldendelicacies.GoldenDelicaciesModClient"
+		]
+	},
+	"mixins": [
+		"goldendelicacies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

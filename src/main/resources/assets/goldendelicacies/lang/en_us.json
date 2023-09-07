@@ -1,0 +1,31 @@
+{
+  "block.goldendelicacies.charcoal_block": "Block Of Charcoal",
+  "block.goldendelicacies.apple_crate": "Apple Crate",
+  "block.goldendelicacies.beetroot_crate": "Beetroot Crate",
+  "block.goldendelicacies.carrot_crate": "Carrot Crate",
+  "block.goldendelicacies.chorus_fruit_crate": "Chorus Fruit Crate",
+  "block.goldendelicacies.glow_berry_crate": "Glow Berry Crate",
+  "block.goldendelicacies.potato_crate": "Potato Crate",
+  "block.goldendelicacies.sweet_berry_crate": "Sweet Berry Crate",
+
+  "item.goldendelicacies.stitched_rotten_flesh": "Stitched Rotten Flesh",
+  "item.goldendelicacies.glass_shard": "Glass Shard",
+  "item.goldendelicacies.glass_dust": "Glass Dust",
+  "item.goldendelicacies.golden_baked_potato": "Golden Baked Potato",
+  "item.goldendelicacies.golden_beetroot": "Golden Beetroot",
+  "item.goldendelicacies.golden_beetroot_soup": "Golden Beetroot Soup",
+  "item.goldendelicacies.golden_bread": "Golden Bread",
+  "item.goldendelicacies.golden_chorus_fruit": "Golden Chorus Fruit",
+  "item.goldendelicacies.golden_cooked_beef": "Golden Beef",
+  "item.goldendelicacies.golden_cooked_chicken": "Golden Chicken",
+  "item.goldendelicacies.golden_cooked_cod": "Golden Cod",
+  "item.goldendelicacies.golden_cooked_mutton": "Golden Mutton",
+  "item.goldendelicacies.golden_cooked_porkchop": "Golden Porkchop",
+  "item.goldendelicacies.golden_cooked_rabbit": "Golden Rabbit",
+  "item.goldendelicacies.golden_cooked_salmon": "Golden Salmon",
+  "item.goldendelicacies.golden_glow_berries": "Golden Glow Berries",
+  "item.goldendelicacies.golden_pumpkin_pie": "Golden Pumpkin Pie",
+  "item.goldendelicacies.golden_sweet_berries": "Golden Sweet Berries",
+
+  "itemgroup.goldendelicacies_group": "Golden Delicacies"
+}

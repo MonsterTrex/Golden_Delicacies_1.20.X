@@ -58,11 +58,23 @@ public class ModItems {
     public static final Item GOLDEN_SWEET_BERRIES = registerItem("golden_sweet_berries",
             new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_SWEET_BERRIES)));
 
-    public static void itemGroupIngredients(FabricItemGroupEntries entries) {
+
+
+    public static void itemGroupNatural(FabricItemGroupEntries entries) {
+        entries.add(ModBlocks.APPLE_CRATE);
+        entries.add(ModBlocks.BEETROOT_CRATE);
+        entries.add(ModBlocks.CARROT_CRATE);
+        entries.add(ModBlocks.CHORUS_FRUIT_CRATE);
+        entries.add(ModBlocks.GLOW_BERRY_CRATE);
+        entries.add(ModBlocks.POTATO_CRATE);
+        entries.add(ModBlocks.SWEET_BERRY_CRATE);
+    }
+    public static void itemGroupFoodAndDrink(FabricItemGroupEntries entries) {
         entries.add(ModItems.GOLDEN_BAKED_POTATO);
         entries.add(ModItems.GOLDEN_BEETROOT);
         entries.add(ModItems.GOLDEN_BEETROOT_SOUP);
         entries.add(ModItems.GOLDEN_BREAD);
+        entries.add(ModItems.GOLDEN_CHORUS_FRUIT);
         entries.add(ModItems.GOLDEN_COOKED_BEEF);
         entries.add(ModItems.GOLDEN_COOKED_CHICKEN);
         entries.add(ModItems.GOLDEN_COOKED_COD);
@@ -73,22 +85,24 @@ public class ModItems {
         entries.add(ModItems.GOLDEN_GLOW_BERRIES);
         entries.add(ModItems.GOLDEN_PUMPKIN_PIE);
         entries.add(ModItems.GOLDEN_SWEET_BERRIES);
-
-        entries.add(ModBlocks.APPLE_CRATE);
-        entries.add(ModBlocks.BEETROOT_CRATE);
-        entries.add(ModBlocks.CARROT_CRATE);
-        entries.add(ModBlocks.CHORUS_FRUIT_CRATE);
-        entries.add(ModBlocks.GLOW_BERRY_CRATE);
-        entries.add(ModBlocks.POTATO_CRATE);
-        entries.add(ModBlocks.SWEET_BERRY_CRATE);
     }
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(GoldenDelicaciesMod.MOD_ID, name), item);
     }
     public static void registerModItems() {
         GoldenDelicaciesMod.LOGGER.info("Registering Mod Items for " + GoldenDelicaciesMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredients);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(ModItems::itemGroupBuildingBlocks);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(ModItems::itemGroupColoredBlocks);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::itemGroupNatural);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::itemGroupFunctional);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(ModItems::itemGroupRedstone);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::itemGroupTools);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ModItems::itemGroupCombat);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::itemGroupFoodAndDrink);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::itemGroupIngredients);
+        //ItemGroupEvents.modifyEntriesEvent(ItemGroups.SPAWN_EGGS).register(ModItems::itemGroupSpawnEggs);
     }
 
 }

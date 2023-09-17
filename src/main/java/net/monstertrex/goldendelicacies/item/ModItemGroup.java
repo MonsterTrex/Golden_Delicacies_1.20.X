@@ -16,10 +16,12 @@ public class ModItemGroup {
             new Identifier(GoldenDelicaciesMod.MOD_ID, "golden_delicacies_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.golden_delicacies_group"))
                     .icon(() -> new ItemStack(ModItems.GOLDEN_COOKED_PORKCHOP)).entries((displayContext, entries) -> {
+
                         entries.add(ModItems.GOLDEN_BAKED_POTATO);
                         entries.add(ModItems.GOLDEN_BEETROOT);
                         entries.add(ModItems.GOLDEN_BEETROOT_SOUP);
                         entries.add(ModItems.GOLDEN_BREAD);
+                        entries.add(ModItems.GOLDEN_CHORUS_FRUIT);
                         entries.add(ModItems.GOLDEN_COOKED_BEEF);
                         entries.add(ModItems.GOLDEN_COOKED_CHICKEN);
                         entries.add(ModItems.GOLDEN_COOKED_COD);
@@ -38,6 +40,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GLOW_BERRY_CRATE);
                         entries.add(ModBlocks.POTATO_CRATE);
                         entries.add(ModBlocks.SWEET_BERRY_CRATE);
+
                     }).build());
     public static void registerItemGroups(){}
 }

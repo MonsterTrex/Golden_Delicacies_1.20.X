@@ -23,7 +23,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.GLOW_BERRY_CRATE, TexturedModel.CUBE_BOTTOM_TOP);
         blockStateModelGenerator.registerSingleton(ModBlocks.POTATO_CRATE, TexturedModel.CUBE_BOTTOM_TOP);
         blockStateModelGenerator.registerSingleton(ModBlocks.SWEET_BERRY_CRATE, TexturedModel.CUBE_BOTTOM_TOP);
-
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
